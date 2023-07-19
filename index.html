@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg sticky-top p-0" style="z-index: 2;">
+        <div class="container-fluid">
+            <a class="navbar-brand h2" href="#">
+                <h2 class="text-white">FavShows</h2>
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigationExercise11" style="background-color: #c01204;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigationExercise11">
+                <ul class="navbar-nav h5 bg-warning">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active text-dark">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-dark" id="series" data-bs-toggle="dropdown">
+                            Series
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item">Locke & Keys</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Altered Carbon</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Peaky Blinders</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">The Witcher</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">The Umbrella Academy</a>
+                            </li>
+                        </ul>
+                        
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-dark" id="movies" data-bs-toggle="dropdown">
+                            Movies
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item">Morbius</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">The Last Witch Hunter</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Bloodshot</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Old</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Slumberland</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-dark" id="recent" data-bs-toggle="dropdown">
+                            Most recent
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item">The Witcher</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Pacific Rim Uprising</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Peaky Blinders</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-dark" id="mylist" data-bs-toggle="dropdown">
+                            My list
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item">Mortal Engines</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Stranger Things</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Love, Death & Robots</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="movie" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button data-bs-target="#movie" data-bs-slide-to="0" class="active">
+
+            </button>
+            <button data-bs-target="#movie" data-bs-slide-to="1">
+
+            </button>
+            <button data-bs-target="#movie" data-bs-slide-to="2">
+
+            </button>
+        </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="img/Pacific Rim Uprising.jpg" class="d-block w-100" alt="">
+                    <h2>Pacific Uprising</h2>
+                 </div>
+                <div class="carousel-item active">
+                    <img src="img/Stranger Things.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item active">
+                    <img src="img/Locke & Key.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#movie" data-bs-slide="previous">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#movie" data-bs-slide="next">
+                 <span class="carousel-control-next-icon"></span>
+            </button>
+    </div>
+    
+    <div style="clear:both"></div>
+    <hr>
+    <nav class="navbar navbar-expand-lg bg-warning sticky-top" style="z-index: 3;">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand h2" style="color: white;" href="#">
+                FavShows
+            </a> -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigationExercise11a" style="background-color: #c01204;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigationExercise11a">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">
+                            <h5 class="text-dark">Action</h5>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <h5 class="text-dark">Adventure</h5>
+                        </a>   
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <h5 class="text-dark">Comedy</h5>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <h5 class="text-dark">Crime</h5>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <h5 class="text-dark">Drama</h5>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <h5 class="text-dark">Fantasy</h5>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <h5 class="text-dark">Sci-Fi</h5>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <h5 class="text-dark">Thriller</h5>
+                        </a>
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <div class="container-fluid">
+        <div class="row g-3">
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="img/Bloodshot.jpg" class="card-img-left h-100" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Bloodshot</h5>
+                            <p class="card-text-right">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iure sed in, nesciunt optio molestiae quos maiores soluta fugiat id, accusantium velit. Recusandae molestiae alias in consectetur, esse minus fugit!
+                            </p>
+                            <a class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#bloodshot">Details & More</a>
+                    </div>  
+                </div> 
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="img/Slumberland.jpg" class="card-img-top h-100" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Slumberland</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iure sed in, nesciunt optio molestiae quos maiores soluta fugiat id, accusantium velit. Recusandae molestiae alias in consectetur, esse minus fugit!
+                        </p>
+                        <a class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#slumberland">Details & More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="img/Old.jpg" class="card-img-top h-100" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Old</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iure sed in, nesciunt optio molestiae quos maiores soluta fugiat id, accusantium velit. Recusandae molestiae alias in consectetur, esse minus fugit!
+                        </p>
+                        <a class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#old">Details & More</a>
+                    </div>
+                </div>    
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="img/Altered Carbon.jpg" class="card-img-top h-100" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Altered Carbon</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iure sed in, nesciunt optio molestiae quos maiores soluta fugiat id, accusantium velit. Recusandae molestiae alias in consectetur, esse minus fugit!
+                        </p>
+                        <a class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#altered">Details & More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="img/Morbius.jpg" class="card-img-top h-100" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Morbius</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iure sed in, nesciunt optio molestiae quos maiores soluta fugiat id, accusantium velit. Recusandae molestiae alias in consectetur, esse minus fugit!
+                        </p>   
+                        <a class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#morbius">Details & More</a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-warning p-2">
+        <h5>FAQ</h5>
+    </div>
+
+    <div class="modal fade" id="bloodshot">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content bg-secondary">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Action</h5>
+                    <button class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body text-white text-center">
+                    <!-- <img src="img/Bloodshot.jpg" class="img-fluid" alt=""> -->
+                    <h3>Bloodshot Trailer</h3>
+                    <video controls class="w-100">
+                        <source src="vid/BLOODSHOT.mp4" type="video/mp4">
+                    </video>
+                    <!-- <video class="w-100" autoplay loop muted>
+                        <source src="vid/BLOODSHOT.mp4" type="video/mp4" />
+                      </video> -->
+                                      
+                    <!-- <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="vid/BLOODSHOT.mp4" allowfullscreen></iframe>
+                    </div> -->
+                      <!--I can use <iframe>, <embed>, <video>, <object> to insert video-->
+
+                       <!-- 21:9 aspect ratio -->
+                        <!-- <div class="embed-responsive embed-responsive-21by9">
+                            <iframe class="embed-responsive-item" src="vid/BLOODSHOT.mp4"></iframe>
+                        </div>  -->
+
+                        <!-- 4:3 aspect ratio -->
+                        <!-- <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="vid/BLOODSHOT.mp4"></iframe>
+                        </div> -->
+
+                        <!-- 1:1 aspect ratio -->
+                        <!-- <div class="embed-responsive embed-responsive-1by1">
+                            <iframe class="embed-responsive-item" src="vid/BLOODSHOT.mp4"></iframe>
+                        </div> -->
+
+                        <!-- <div class="ratio ratio-21x9">
+                            <iframe src="vid/BLOODSHOT.mp4" title="YouTube video" allowfullscreen></iframe>
+                          </div> -->
+                          <!--ratios: 16x9, 21x9, 4x3, 1x1-->
+                </div>
+                <div class="modal-footer"> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="slumberland">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content bg-secondary">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Comedy</h5>
+                    <button class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body text-white text-center">
+                    <img src="img/Slumberland.jpg" class="img-fluid" alt="">
+                    <h3>Slumberland</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores distinctio, consectetur, nesciunt ducimus aliquid illo fugiat vel dolorum quod accusamus suscipit labore cum et ab totam deserunt id numquam esse.
+                     </p>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="old">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content bg-secondary">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Thriller</h5>
+                    <button class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body text-white text-center">
+                    <img src="img/Old.jpg" class="img-fluid" alt="">
+                    <h3>Old</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores distinctio, consectetur, nesciunt ducimus aliquid illo fugiat vel dolorum quod accusamus suscipit labore cum et ab totam deserunt id numquam esse.
+                     </p>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="altered">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content bg-secondary">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Thriller</h5>
+                    <button class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body text-white text-center">
+                    <img src="img/Altered Carbon.jpg" class="img-fluid" alt="">
+                    <h3>Altered Carbon</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores distinctio, consectetur, nesciunt ducimus aliquid illo fugiat vel dolorum quod accusamus suscipit labore cum et ab totam deserunt id numquam esse.
+                     </p>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="morbius">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content bg-secondary">
+                <div class="modal-header">
+                    <h5 class="modal-title text-white">Action</h5>
+                    <button class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body text-white text-center">
+                    <img src="img/Morbius.jpg" class="img-fluid" alt="">
+                    <h3>Morbius</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores distinctio, consectetur, nesciunt ducimus aliquid illo fugiat vel dolorum quod accusamus suscipit labore cum et ab totam deserunt id numquam esse.
+                     </p>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+</body>
+</html>
